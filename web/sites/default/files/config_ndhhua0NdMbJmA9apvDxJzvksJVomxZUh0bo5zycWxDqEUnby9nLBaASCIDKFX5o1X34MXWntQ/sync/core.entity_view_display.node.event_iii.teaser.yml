@@ -1,0 +1,35 @@
+uuid: 331cb188-1a3b-4dad-83ca-f677be079ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event_iii.body
+    - field.field.node.event_iii.field_event_date
+    - field.field.node.event_iii.field_imgpic
+    - node.type.event_iii
+  module:
+    - text
+    - user
+id: node.event_iii.teaser
+targetEntityType: node
+bundle: event_iii
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_event_date: true
+  field_imgpic: true

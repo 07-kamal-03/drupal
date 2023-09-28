@@ -1,0 +1,8 @@
+uuid: 63e7bafa-84a4-4b6d-8661-fe0a6071d8a2
+langcode: en
+status: true
+dependencies: {  }
+id: social_media
+label: 'Social media'
+revision: 0
+description: 'Social media Icons'

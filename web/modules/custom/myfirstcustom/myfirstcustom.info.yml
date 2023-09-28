@@ -1,0 +1,5 @@
+name: 'myfirstcustom'
+type: module
+description: 'myfirstcustom description by kamal'
+package: custom
+core_version_requirement: ^10

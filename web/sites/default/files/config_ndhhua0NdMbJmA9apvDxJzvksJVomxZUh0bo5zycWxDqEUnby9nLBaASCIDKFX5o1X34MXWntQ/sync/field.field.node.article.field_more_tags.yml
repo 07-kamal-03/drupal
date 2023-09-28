@@ -1,0 +1,29 @@
+uuid: dbb2945b-11e2-401c-9522-b11ce956b051
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_tags
+    - node.type.article
+    - taxonomy.vocabulary.cars
+id: node.article.field_more_tags
+field_name: field_more_tags
+entity_type: node
+bundle: article
+label: 'more tags'
+description: "\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada turpis quis augue accumsan, id viverra lectus hendrerit. Nullam sit amet magna quis purus mollis malesuada. Praesent mattis id mauris vitae tincidunt. Donec luctus hendrerit tempus. Praesent pretium pharetra arcu vel mattis. Sed id elit quam. Curabitur id tincidunt dolor.\r\n\r\nSed interdum consequat aliquam. Quisque non rutrum magna. Aliquam pulvinar velit metus, ut posuere tellus laoreet quis. Donec ultrices tortor id posuere mattis. Sed mattis euismod tincidunt. Sed porta id augue vitae dictum. Integer risus nisl, suscipit sed interdum ac, venenatis non ex. Nulla facilisi. Quisque et tortor non mauris fermentum posuere. Pellentesque id sagittis risus. Aliquam dignissim purus risus, sed tempus sapien mattis cursus. In eros eros, tincidunt a ornare non, vestibulum ac magna. Quisque tortor purus, rutrum non ex at, rutrum sagittis ipsum. Quisque pretium nisl felis, at euismod augue volutpat eu. Nullam accumsan nunc at arcu hendrerit, sit amet iaculis erat pretium. Aliquam id congue risus.\r\n\r\nIn nunc ante, porta non lacus in, tristique efficitur ante. Cras in lacus blandit tortor suscipit molestie sit amet sit amet lorem. Nam congue enim faucibus enim auctor suscipit. Nullam viverra tortor quis imperdiet ornare. Sed nisl eros, eleifend vel pharetra eu, semper vel sem. Nulla elementum ante et nisl egestas, et porta purus dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula leo mauris, a aliquam est tempus a.\r\n\r\nVivamus vitae laoreet nisl, ac ullamcorper turpis. Duis egestas metus id consequat elementum. In nec elementum mi. Pellentesque massa eros, blandit a rhoncus vel, auctor quis metus. Vivamus sagittis arcu turpis. Vestibulum tincidunt ligula metus, a ultrices mauris consequat et. Nunc mollis porttitor mauris sit amet interdum.\r\n\r\nPellentesque convallis neque ac enim venenatis, a ullamcorper erat molestie. Vestibulum tincidunt facilisis rhoncus. Morbi rhoncus vitae leo in vulputate. Integer volutpat posuere justo quis luctus. In pretium magna et nunc tincidunt, sit amet pretium neque facilisis. Etiam iaculis vel sem sed egestas. Praesent efficitur justo sed mi bibendum luctus. Curabitur ac elit nec dui elementum suscipit. Nullam efficitur nisl at maximus vulputate. Vivamus tellus eros, sollicitudin a erat eu, congue feugiat mi. Pellentesque eu condimentum sapien. Aliquam imperdiet urna a ipsum egestas fringilla. Morbi lobortis urna eu neque auctor, eget auctor lectus dapibus. Cras eu vestibulum arcu, non iaculis tortor. Etiam nisi odio, iaculis vitae leo vitae, porta placerat sem. Praesent nec mollis turpis. "
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cars: cars
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

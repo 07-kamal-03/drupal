@@ -1,0 +1,24 @@
+uuid: c5e4d492-f7ee-4370-8e6f-6d6efcb04acd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_pagetitle
+theme: olivero
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'DRUPAL SITE'
+  label_display: visible
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

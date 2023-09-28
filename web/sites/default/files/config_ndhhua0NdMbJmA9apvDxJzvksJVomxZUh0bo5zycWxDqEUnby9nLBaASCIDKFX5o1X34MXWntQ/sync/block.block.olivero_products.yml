@@ -1,0 +1,29 @@
+uuid: df8e72a7-4050-49c5-adca-b03ff5c8ed75
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.products
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_products
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'system_menu_block:products'
+settings:
+  id: 'system_menu_block:products'
+  label: Products
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

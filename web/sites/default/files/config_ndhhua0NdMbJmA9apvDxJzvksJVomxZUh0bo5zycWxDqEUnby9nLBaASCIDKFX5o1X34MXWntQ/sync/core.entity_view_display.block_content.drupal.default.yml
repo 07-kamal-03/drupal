@@ -1,0 +1,22 @@
+uuid: 5fd60f64-7ac3-408a-9d28-2647e6032c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.drupal
+    - field.field.block_content.drupal.body
+  module:
+    - text
+id: block_content.drupal.default
+targetEntityType: block_content
+bundle: drupal
+mode: default
+content:
+  body:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

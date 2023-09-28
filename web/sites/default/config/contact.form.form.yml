@@ -1,0 +1,12 @@
+uuid: 583e6e9b-13ca-4458-b5cd-bf2612a6c56d
+langcode: en
+status: true
+dependencies: {  }
+id: form
+label: form
+recipients:
+  - kamalraj@moonraft.com
+reply: ''
+weight: 1
+message: 'welcome thanks for fill the form'
+redirect: ''

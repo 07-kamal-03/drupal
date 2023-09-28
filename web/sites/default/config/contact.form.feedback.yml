@@ -1,0 +1,14 @@
+uuid: 51175019-2295-4fcf-97f7-d1fb7f46b624
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - kamalraj@moonraft.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

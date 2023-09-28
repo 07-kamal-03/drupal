@@ -1,0 +1,18 @@
+uuid: 1424f28a-38ed-4e6b-b0ec-e7174bdd0c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.water_falls
+id: node.water_falls.title
+field_name: title
+entity_type: node
+bundle: water_falls
+label: 'Waterfall name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

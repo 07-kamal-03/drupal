@@ -1,0 +1,24 @@
+uuid: ecda4582-666d-4004-a52e-d7616a73a3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event_iv
+  module:
+    - text
+id: node.event_iv.body
+field_name: body
+entity_type: node
+bundle: event_iv
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

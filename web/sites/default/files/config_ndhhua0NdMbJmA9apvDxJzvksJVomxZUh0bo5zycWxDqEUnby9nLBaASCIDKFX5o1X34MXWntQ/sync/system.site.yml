@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: b2cd0d93-7e08-43b2-89f1-cff567ee90b9
+name: 'KAMALRAJ SITE'
+mail: kamalraj@moonraft.com
+slogan: 'learning drupal'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

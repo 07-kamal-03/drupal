@@ -1,0 +1,7 @@
+# myfirstcustom.page:
+#   path: '/myfirstcustom'
+#   defaults:
+#     _controller: 'Drupal\myfirstcustom\Controller\myfirstcustomcontroller::welcome'
+#     _title: 'Hello ,This is my first I have created by KAMAL RAJ'
+#   requirements:
+#     _permission: 'access content'

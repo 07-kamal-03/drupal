@@ -1,0 +1,25 @@
+uuid: 898e4ecb-5af5-48cd-a4c2-f67ea052bc3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - poll
+    - system
+  theme:
+    - olivero
+id: olivero_mostrecentpoll
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: poll_recent_block
+settings:
+  id: poll_recent_block
+  label: 'Most recent poll'
+  label_display: visible
+  provider: poll
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n"

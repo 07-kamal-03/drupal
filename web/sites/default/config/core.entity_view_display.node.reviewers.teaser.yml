@@ -1,0 +1,30 @@
+uuid: 54bba391-90fe-4223-a51c-22d951f243f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reviewers.body
+    - node.type.reviewers
+  module:
+    - text
+    - user
+id: node.reviewers.teaser
+targetEntityType: node
+bundle: reviewers
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

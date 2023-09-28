@@ -1,0 +1,8 @@
+uuid: 0d29844f-f31a-4891-8c77-81d28fd5930c
+langcode: en
+status: true
+dependencies: {  }
+id: products
+label: Products
+description: 'list of products'
+locked: false

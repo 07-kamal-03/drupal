@@ -1,0 +1,28 @@
+uuid: a897d89f-7007-44ca-8247-c83c2798f2f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reviewers.body
+    - node.type.reviewers
+  module:
+    - text
+    - user
+id: node.reviewers.default
+targetEntityType: node
+bundle: reviewers
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

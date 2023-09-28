@@ -1,0 +1,50 @@
+uuid: 5610d6c4-e92f-4f31-a2d7-1dd806c1659e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event_iv.body
+    - field.field.node.event_iv.field_event4day
+    - field.field.node.event_iv.field_event4img
+    - node.type.event_iv
+  module:
+    - datetime
+    - text
+    - user
+id: node.event_iv.default
+targetEntityType: node
+bundle: event_iv
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_event4day:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_event4img:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true

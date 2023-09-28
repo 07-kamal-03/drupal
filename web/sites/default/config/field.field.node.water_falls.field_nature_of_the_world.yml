@@ -1,0 +1,23 @@
+uuid: 76234ab3-d657-44cf-a7b4-c263e1761ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nature_of_the_world
+    - node.type.water_falls
+  module:
+    - link
+id: node.water_falls.field_nature_of_the_world
+field_name: field_nature_of_the_world
+entity_type: node
+bundle: water_falls
+label: 'Nature of the World'
+description: 'The waterfalls created by the Nature...!'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

@@ -1,0 +1,38 @@
+uuid: 0de2ef8d-cb80-4c70-9c35-011d5348336c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - node.type.water_falls
+  module:
+    - filter
+    - media
+    - node
+id: author
+label: author
+weight: -7
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create page content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit any water_falls content'
+  - 'use text format full_html'
+  - 'use text format restricted_html'

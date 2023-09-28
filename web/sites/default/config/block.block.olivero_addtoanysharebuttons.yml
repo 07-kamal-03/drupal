@@ -1,0 +1,25 @@
+uuid: 808005be-96a5-46a6-b464-b136689d1f9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - olivero
+id: olivero_addtoanysharebuttons
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'Social media'
+  label_display: visible
+  provider: addtoany
+  context_mapping: {  }
+  link_url: ''
+  link_title: ''
+  buttons_size: ''
+  addtoany_html: ''
+visibility: {  }

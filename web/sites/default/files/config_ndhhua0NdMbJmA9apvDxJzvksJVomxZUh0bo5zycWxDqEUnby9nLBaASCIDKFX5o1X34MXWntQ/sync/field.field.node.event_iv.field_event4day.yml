@@ -1,0 +1,21 @@
+uuid: a2ba95bb-25ed-4b76-a1cb-9fccddaa8863
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event4day
+    - node.type.event_iv
+  module:
+    - datetime
+id: node.event_iv.field_event4day
+field_name: field_event4day
+entity_type: node
+bundle: event_iv
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
