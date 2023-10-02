@@ -1,0 +1,5 @@
+name: 'my_first_custom'
+type: module
+description: 'my_first_custom'
+package: custom
+core_version_requirement: ^10

@@ -1,6 +1,5 @@
-// my_module.install
-function my_module_schema() {
-  $schema = [];
+<?php
+function myform_schema() {
 
   $schema['myform_data'] = [
     'description' => 'Custom table for storing form data',
@@ -29,10 +28,35 @@ function my_module_schema() {
         'not null' => TRUE,
         'description' => 'Email address of the user.',
       ],
-      // Add more fields as needed for your form data.
+       'gender' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Gender of the user.',
+      ],
+       'interest' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Interest of the user.',
+      ],
+       'location' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Location of the user.',
+      ],
+       'address' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Address of the user.',
+      ],
     ],
     'primary key' => ['id'],
   ];
 
   return $schema;
 }
+
+?>
