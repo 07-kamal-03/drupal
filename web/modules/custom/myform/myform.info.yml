@@ -1,0 +1,5 @@
+name: 'myform'
+type: module
+description: 'My Custom Form'
+package: custom
+core_version_requirement: ^10
