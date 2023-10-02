@@ -1,0 +1,7 @@
+myform.Form:
+  path: '/myform'
+  defaults:
+    _form: 'Drupal\myform\Form\DataForm'
+    _title: 'My Custom Form'
+  requirements:
+    _permission: 'access content'

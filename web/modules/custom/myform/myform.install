@@ -1,0 +1,38 @@
+// my_module.install
+function my_module_schema() {
+  $schema = [];
+
+  $schema['myform_data'] = [
+    'description' => 'Custom table for storing form data',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique identifier for the record.',
+      ],
+      'firstname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'First name of the user.',
+      ],
+      'lastname' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Last name of the user.',
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Email address of the user.',
+      ],
+      // Add more fields as needed for your form data.
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
