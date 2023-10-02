@@ -36,22 +36,22 @@ class DataForm extends FormBase{
         ];
 
         $options_gender = [
-            'option1' => t('Male'),
-            'option2' => t('Female'),
-            'option3' => t('Other'),
+            'Male' => t('Male'),
+            'Female' => t('Female'),
+            'Other' => t('Other'),
           ];
         
           $form['gender'] = [
             '#type' => 'radios',
             '#title' => t('Gender'),
             '#options' => $options_gender,
-            '#default_value' => 'option1',
+            '#default_value' => '',
           ];
 
           $options_interest = [
-            'option1' => t('Computer'),
-            'option2' => t('Electrical'),
-            'option3' => t('Mechanical'),
+            'Computer' => t('Computer'),
+            'Electrical' => t('Electrical'),
+            'Mechanical' => t('Mechanical'),
           ];
         
           $form['interest'] = [
@@ -99,9 +99,21 @@ class DataForm extends FormBase{
             $lastname = $form_state->getValue('lastname');
             $email = $form_state->getValue('email');
             $gender = $form_state->getValue('gender');
-            $interest = $form_state->getValue('interest');
+            $interest = array_filter($form_state->getValue('interest'));
             $location = $form_state->getValue('location');
             $address = $form_state->getValue('address');
+            
+            $checked_interest = implode(',',$interest);
+
+            \Drupal::database()->insert('myform_data')->fields([
+              'firstname' => $firstname,
+              'lastname' => $lastname,
+              'email' => $email,
+              'gender' => $gender,
+              'interest' => $checked_interest,
+              'location' => $location,
+              'address' => $address,
+            ])->execute();
             
             $this->messenger()->addStatus($this->t('Thank you, @name Your Form has been submitted successfully.', ['@name' => $firstname]));
     }
