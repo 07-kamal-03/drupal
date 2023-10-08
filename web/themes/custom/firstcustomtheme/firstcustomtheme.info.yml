@@ -1,0 +1,17 @@
+name: 'firstcustomtheme'
+type: theme
+description: 'A custom Drupal theme for my website.'
+core_version_requirement: ^10
+base theme: stable9
+package: custom
+libraries: 
+  - firstcustomtheme/global-cs
+  - firstcustomtheme/global-js
+
+regions: 
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  

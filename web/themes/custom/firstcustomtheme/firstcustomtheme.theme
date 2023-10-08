@@ -1,0 +1,20 @@
+<?php
+
+function firstcustomtheme_preprocess_header(&$variables) {
+  $menu_name = 'header'; 
+  $menu_tree = \Drupal::menuTree()->load($menu_name);
+  $variables['items'] = \Drupal::menuTree()->build($menu_tree);
+}
+
+function firstcustomtheme_preprocess_footer(&$variables) {
+  $menu_name = 'footer'; 
+  $menu_tree = \Drupal::menuTree()->load($menu_name);
+  $variables['items'] = \Drupal::menuTree()->build($menu_tree);
+}
+
+function firstcustomtheme_preprocess_page(&$variables) {
+  // Get the site name and add it to the template variables.
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+?>

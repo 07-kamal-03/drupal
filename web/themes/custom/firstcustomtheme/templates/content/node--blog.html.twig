@@ -1,0 +1,10 @@
+<article class="myblog">
+  <h2>{{ content.title }}</h2>
+  <p>{{ content.field_nature_of_the_world }}</p>
+  
+  {% if content.field_image %}
+    <div class="image">{{ content.field_image }}</div>
+  {% endif %}
+  
+  {{ content.body }}
+</article>

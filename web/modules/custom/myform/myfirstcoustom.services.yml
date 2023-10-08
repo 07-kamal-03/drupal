@@ -1,0 +1,5 @@
+services:
+  myform.custom_block:
+    class: Drupal\myform\Form\DataForm
+    arguments: ['@form_builder']
+    

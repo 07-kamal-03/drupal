@@ -5,3 +5,4 @@ myfirstcustom.simpleContent:
     _title: 'Drupal Custom Controller'
   requirements:
     _permission: 'access content'
+

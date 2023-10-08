@@ -1,0 +1,10 @@
+.layout-container{
+    background-color: rgb(177, 186, 255);
+}
+.headermenu{
+    background-color: bisque;
+}
+.footermenu{
+    background-color: rgb(9, 9, 9);
+    color: azure;
+}

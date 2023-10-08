@@ -40,11 +40,17 @@ function myform_schema() {
         'not null' => TRUE,
         'description' => 'Interest of the user.',
       ],
-       'location' => [
+       'country' => [
         'type' => 'varchar',
         'length' => 255,
         'not null' => TRUE,
-        'description' => 'Location of the user.',
+        'description' => 'Country of the user.',
+      ],
+       'states' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'State of the user.',
       ],
        'address' => [
         'type' => 'varchar',

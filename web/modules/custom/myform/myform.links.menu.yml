@@ -1,0 +1,5 @@
+myform.menu:
+  title: 'myform'
+  route_name: myform.menu
+  weight: 100
+  menu_name: main

@@ -4,4 +4,14 @@ myform.Form:
     _form: 'Drupal\myform\Form\DataForm'
     _title: 'My Custom Form'
   requirements:
+    _permission: 'administer site configuration'
+
+myform.menu:
+  path: '/menu'
+  defaults:
+    _controller: 'Drupal\myform\Controller\MenuController::mainLinkPage'
+    _title: 'Drupal Custom menu'
+  requirements:
     _permission: 'access content'
+
+

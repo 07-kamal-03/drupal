@@ -1,0 +1,7 @@
+<div class="headermenu">
+<ul class="header-menu">
+  {% for item in items %}
+    <li>{{ link(item.title, item.url) }}</li>
+  {% endfor %}
+</ul>
+</div>
